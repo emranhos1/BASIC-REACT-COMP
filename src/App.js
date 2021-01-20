@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import NormalJSCode from './Components/normalJSCode/NormalJSCode';
+import FunctionalComponent from "./Components/compFunction/FunctionalComponent";
+import ClassComponent from "./Components/compClass/ClassComponent";
+import FunctionalProps from "./Components/props/FunctionalProps";
+import ClassProps from "./Components/props/ClassProps";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    return (
+        <div className="App">
+            <div>
+                <NormalJSCode></NormalJSCode> 
+                <FunctionalComponent></FunctionalComponent>
+                <ClassComponent></ClassComponent>
+                
+                <FunctionalProps name="Emran" age="30"></FunctionalProps>
+                <FunctionalProps name="Istiak"></FunctionalProps>
+
+                <ClassProps name="Emran" age="29"></ClassProps>
+                <ClassProps name="Istiak"></ClassProps>
+
+            </div>
+        </div>
   );
 }
 
