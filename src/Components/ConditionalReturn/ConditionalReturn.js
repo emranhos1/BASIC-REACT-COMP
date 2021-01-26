@@ -22,13 +22,15 @@ class ConditionalReturn extends Component{
         if(this.state.isLogin === true){
             return(
                 <div>
-                    <h6>From Conditional Return <button className="btn btn-danger m-5" onClick={this.changeStateLogin.bind(this, false)}>Logout</button></h6>
+                    <h6>From Conditional Return</h6>
+                    <button className="btn btn-danger" onClick={this.changeStateLogin.bind(this, false)}>Logout</button>
                 </div>
             )
         } else {
             return(
                 <div>
-                    <h6>From Conditional Return <button className="btn btn-primary m-5"onClick={this.changeStateLogin.bind(this, true)}>Login</button></h6>
+                    <h6>From Conditional Return</h6>
+                    <button className="btn btn-primary"onClick={this.changeStateLogin.bind(this, true)}>Login</button>
                 </div>
             )
         }
