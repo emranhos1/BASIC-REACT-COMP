@@ -14,6 +14,11 @@ import ArrowFunction from '../Components/ArrowFunction/ArrowFunction';
 import ClassState from "../Components/State/ClassState";
 import ClassStateWithVar from "../Components/State/ClassStateWIthVar";
 import SetState from "../Components/State/SetState";
+import ConditionalReturn from "../Components/ConditionalReturn/ConditionalReturn";
+import ConditionalVariableElement from "../Components/ConditionalReturn/ConditionalVariableElement";
+import ForceUpdate from '../Components/ForceUpdate/ForceUpdate';
+import Render from '../Components/Render-Hydrate/Render';
+import Hydrate from '../Components/Render-Hydrate/Hydrate';
 
 function App() {
     return (
@@ -42,6 +47,16 @@ function App() {
                 <ClassState></ClassState>
                 <ClassStateWithVar></ClassStateWithVar>
                 <SetState></SetState>
+            </div>
+            <div style={{float:'left'}}>
+                <ConditionalReturn></ConditionalReturn>
+                <ConditionalVariableElement></ConditionalVariableElement>
+                <ForceUpdate></ForceUpdate>
+                <Render></Render>
+                <Hydrate></Hydrate>
+            </div>
+            <div style={{float:'left'}}>
+
             </div>
         </div>
   );
