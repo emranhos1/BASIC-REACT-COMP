@@ -8,7 +8,7 @@ function FunctionalButtonClick(){
 
     return(
         <div>
-            <button onClick={btnClicked}>FunctionalButtonClick</button>
+            <button onClick={btnClicked} className='btn btn-success'>FunctionalButtonClick</button>
             
             {/* if function called with '()' this, function will called before page load */}
             {/* <button onClick={this.btnClicked()}>ClassButtonClick</button>  */}

@@ -8,7 +8,7 @@ function FunctionalPassingArgument(props){
 
     return(
         <div>
-            <button onClick={btnClicked.bind(this, props.value)}>FunctionalPassingArgument</button>
+            <button onClick={btnClicked.bind(this, props.value)} className='btn btn-danger'>FunctionalPassingArgument</button>
             
             {/* if function called with '()' this, function will called before page load */}
             {/* <button onClick={this.btnClicked()}>ClassButtonClick</button>  */}

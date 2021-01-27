@@ -17,46 +17,56 @@ import SetState from "../Components/State/SetState";
 import ConditionalReturn from "../Components/ConditionalReturn/ConditionalReturn";
 import ConditionalVariableElement from "../Components/ConditionalReturn/ConditionalVariableElement";
 import ForceUpdate from '../Components/ForceUpdate/ForceUpdate';
-import Render from '../Components/Render-Hydrate/Render';
-import Hydrate from '../Components/Render-Hydrate/Hydrate';
+import Render from '../Components/ReactDOM/Render-Hydrate/Render';
+import Hydrate from '../Components/ReactDOM/Render-Hydrate/Hydrate';
+import FindDOMNode from '../Components/ReactDOM/FindDOMNode/FindDOMNode';
+import Form from '../Components/Form/Form';
 
 function App() {
     return (
         <div className="App">
-            <div style={{float:'left'}}>
-                <NormalJSCode></NormalJSCode> 
+            <div className="row">
+                <div className="col-md-4" style={{backgroundColor: '#e9dbbb'}}>
+                    <NormalJSCode></NormalJSCode> 
+                    <FunctionalComponent></FunctionalComponent>
+                    <ClassComponent></ClassComponent>
+                    <FunctionalProps name="Emran" age="30"></FunctionalProps>
+                    <FunctionalProps name="Istiak"></FunctionalProps>
+                    <ClassProps name="Emran" age="29"></ClassProps>
+                    <ClassProps name="Istiak"></ClassProps>
+                    <FunctionalButtonClick></FunctionalButtonClick>
+                    <ClassButtonClick></ClassButtonClick>
+                    <FunctionalPassingArgument value="Argument pass from Function Button"></FunctionalPassingArgument>
+                    <ClassPassingArgument value="Argument pass from Class Button"></ClassPassingArgument>
+                </div>
+ 
+                <div className="col-md-4" style={{backgroundColor: '#23e4ff'}}>
+                    <BootstrapButton value="Bootstrap button Clicked"></BootstrapButton>
+                    <ArrowFunction msg="Arrived from Arrow Function"></ArrowFunction>
+                    <ClassState></ClassState>
+                    <ClassStateWithVar></ClassStateWithVar>
+                    <SetState></SetState>
+                </div>
                 
-                <FunctionalComponent></FunctionalComponent>
-                <ClassComponent></ClassComponent>
-                
-                <FunctionalProps name="Emran" age="30"></FunctionalProps>
-                <FunctionalProps name="Istiak"></FunctionalProps>
-
-                <ClassProps name="Emran" age="29"></ClassProps>
-                <ClassProps name="Istiak"></ClassProps>
-
-                <FunctionalButtonClick></FunctionalButtonClick>
-                <ClassButtonClick></ClassButtonClick>
-
-                <FunctionalPassingArgument value="Argument pass from Function Button"></FunctionalPassingArgument>
-                <ClassPassingArgument value="Argument pass from Class Button"></ClassPassingArgument>
+                <div className="col-md-4" style={{backgroundColor: '#6ca339'}}>
+                    <ConditionalReturn></ConditionalReturn>
+                    <ConditionalVariableElement></ConditionalVariableElement>
+                    <ForceUpdate></ForceUpdate>
+                    <Render></Render>
+                    <Hydrate></Hydrate>
+                </div>
             </div>
-            <div style={{float:'left'}}>
-                <BootstrapButton value="Bootstrap button Clicked"></BootstrapButton>
-                <ArrowFunction msg="Arrived from Arrow Function"></ArrowFunction>
-                <ClassState></ClassState>
-                <ClassStateWithVar></ClassStateWithVar>
-                <SetState></SetState>
-            </div>
-            <div style={{float:'left'}}>
-                <ConditionalReturn></ConditionalReturn>
-                <ConditionalVariableElement></ConditionalVariableElement>
-                <ForceUpdate></ForceUpdate>
-                <Render></Render>
-                <Hydrate></Hydrate>
-            </div>
-            <div style={{float:'left'}}>
 
+            <div className="row">
+                <div className="col-md-4" style={{backgroundColor: '#dbe58f'}}>
+                    <FindDOMNode></FindDOMNode>
+                </div>
+                <div className="col-md-4" style={{backgroundColor: '#acd999'}}>
+                    <Form></Form>
+                </div>
+                <div className="col-md-4" style={{backgroundColor: '#995c56'}}>
+
+                </div>
             </div>
         </div>
   );

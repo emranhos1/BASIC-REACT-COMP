@@ -13,7 +13,7 @@ class ForceUpdate extends Component{
 
     render(){
         return(
-            <div>
+            <div style={{backgroundColor: "gray"}}>
                 <h6>{Math.random()}</h6>
                 <button className="btn btn-primary" onClick={this.refresh}>Refresh</button>
             </div>

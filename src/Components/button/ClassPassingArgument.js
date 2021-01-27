@@ -9,7 +9,7 @@ class ClassPassingArgument extends Component {
     render(){
         return(
             <dev>
-                <button onClick={this.btnClicked.bind(this, this.props.value)}>ClassPassingArgument</button> 
+                <button onClick={this.btnClicked.bind(this, this.props.value)} className='btn btn-success'>ClassPassingArgument</button> 
             </dev>
         )
     }

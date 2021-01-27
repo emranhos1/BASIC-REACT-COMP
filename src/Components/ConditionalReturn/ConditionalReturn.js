@@ -21,14 +21,14 @@ class ConditionalReturn extends Component{
     render() {
         if(this.state.isLogin === true){
             return(
-                <div>
+                <div style={{backgroundColor: "yellow"}}>
                     <h6>From Conditional Return</h6>
                     <button className="btn btn-danger" onClick={this.changeStateLogin.bind(this, false)}>Logout</button>
                 </div>
             )
         } else {
             return(
-                <div>
+                <div  style={{backgroundColor: "red"}}>
                     <h6>From Conditional Return</h6>
                     <button className="btn btn-primary"onClick={this.changeStateLogin.bind(this, true)}>Login</button>
                 </div>

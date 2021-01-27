@@ -17,9 +17,9 @@ class Render extends Component {
     }
     render() {
         return (
-            <div>
+            <div style={{backgroundColor: "pink"}}>
                 <h6 id="name1">Hi This is Emran</h6>
-                <button onClick={this.newfunction}>Hydrate</button>    
+                <button onClick={this.newfunction} className='btn btn-primary'>Hydrate</button>    
             </div>
         );
     }
