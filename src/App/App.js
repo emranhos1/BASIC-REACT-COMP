@@ -61,10 +61,12 @@ function App() {
                 <div className="col-md-4" style={{backgroundColor: '#dbe58f'}}>
                     <FindDOMNode></FindDOMNode>
                 </div>
-                <div className="col-md-4" style={{backgroundColor: '#acd999'}}>
+
+	        <div className="col-md-4" style={{backgroundColor: '#acd999'}}>
                     <Form></Form>
                 </div>
-                <div className="col-md-4" style={{backgroundColor: '#995c56'}}>
+                
+	        <div className="col-md-4" style={{backgroundColor: '#995c56'}}>
 
                 </div>
             </div>
