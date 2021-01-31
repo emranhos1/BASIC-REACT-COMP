@@ -13,7 +13,7 @@ class FindDOMNode extends Component {
         return (
             <div>
                 <img height="200" width="200" id="imgID" 
-                    src="https://blog.matcharesident.com/wp-content/uploads/2019/07/iStock-944453634-750x450.jpg"></img>
+                    src="https://blog.matcharesident.com/wp-content/uploads/2019/07/iStock-944453634-750x450.jpg" alt="World"></img>
                 <br></br>
                 <button onClick={this.changeIMG} className="btn btn-primary">Change image</button>
             </div>

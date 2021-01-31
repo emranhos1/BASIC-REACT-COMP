@@ -20,7 +20,9 @@ import ForceUpdate from '../Components/ForceUpdate/ForceUpdate';
 import Render from '../Components/ReactDOM/Render-Hydrate/Render';
 import Hydrate from '../Components/ReactDOM/Render-Hydrate/Hydrate';
 import FindDOMNode from '../Components/ReactDOM/FindDOMNode/FindDOMNode';
-import Form from '../Components/Form/Form';
+import Signup from '../Components/Form/Signup';
+import List from '../Components/List/List';
+import JsonFormatList from '../Components/List/JsonFormatList';
 
 function App() {
     return (
@@ -62,10 +64,11 @@ function App() {
                     <FindDOMNode></FindDOMNode>
                 </div>
                 <div className="col-md-4" style={{backgroundColor: '#acd999'}}>
-                    <Form></Form>
+                    <Signup></Signup>
                 </div>
                 <div className="col-md-4" style={{backgroundColor: '#995c56'}}>
-
+                    <List></List>
+                    <JsonFormatList></JsonFormatList>
                 </div>
             </div>
         </div>
