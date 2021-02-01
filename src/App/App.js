@@ -23,6 +23,7 @@ import FindDOMNode from '../Components/ReactDOM/FindDOMNode/FindDOMNode';
 import Signup from '../Components/Form/Signup';
 import List from '../Components/List/List';
 import JsonFormatList from '../Components/List/JsonFormatList';
+import RouterMain from '../Components/Route/Router/RouterMain';
 
 function App() {
     return (
@@ -70,6 +71,10 @@ function App() {
                     <List></List>
                     <JsonFormatList></JsonFormatList>
                 </div>
+            </div>
+            
+            <div>
+                <RouterMain></RouterMain>
             </div>
         </div>
   );
