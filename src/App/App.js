@@ -24,6 +24,8 @@ import Signup from '../Components/Form/Signup';
 import List from '../Components/List/List';
 import JsonFormatList from '../Components/List/JsonFormatList';
 import RouterMain from '../Components/Route/Router/RouterMain';
+import GetData from '../Components/HTTPRequestAxios/GetData';
+import PostData from '../Components/HTTPRequestAxios/PostData';
 
 function App() {
     return (
@@ -73,8 +75,14 @@ function App() {
                 </div>
             </div>
             
-            <div>
-                <RouterMain></RouterMain>
+            <div className="row">
+                <div className="col-md-4" style={{backgroundColor: '#999c59'}}>
+                    <RouterMain></RouterMain>
+                </div>
+                <div className="col-md-4" style={{backgroundColor: 'blueviolet'}}>
+                    <GetData></GetData>
+                    <PostData></PostData>
+                </div>
             </div>
         </div>
   );
