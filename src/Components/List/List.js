@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 class List extends Component {
 
     dataList = (data) =>{
-        return(<option>{data}</option>)
+        return(<option key={data}>{data}</option>)
     }
     
-    anotherDataList = (data) =>{
-        return(<option>{data*10}</option>)
+    anotherDataList = (anotherData) =>{
+        return(<option key={anotherData}>{anotherData*10}</option>)
     }
 
     render() {

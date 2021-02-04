@@ -17,15 +17,15 @@ class JsonFormatList extends Component {
         }];
 
         const dataItemHouse = address.map((dataHouse) => {
-            return (<option>{dataHouse.house}</option>)
+            return (<option key={dataHouse.house}>{dataHouse.house}</option>)
         });
 
         const dataItemCity = address.map((dataCity) => {
-            return (<option>{dataCity.city}</option>)
+            return (<option key={dataCity.city}>{dataCity.city}</option>)
         });
         
         const dataItemZip = address.map((dataZip) => {
-            return (<option>{dataZip.zip}</option>)
+            return (<option key={dataZip.zip}>{dataZip.zip}</option>)
         });
         
         return (

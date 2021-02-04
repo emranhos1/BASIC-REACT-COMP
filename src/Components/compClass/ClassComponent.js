@@ -3,9 +3,9 @@ import React, { Component } from "react";
 class ClassComponent extends Component {
     render(){
         return(
-            <dev>
+            <div>
                 <h6>THis is class Component</h6>
-            </dev>
+            </div>
         )
     }
 }
