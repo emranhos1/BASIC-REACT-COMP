@@ -20,7 +20,7 @@ import ForceUpdate from '../Components/ForceUpdate/ForceUpdate';
 import Render from '../Components/ReactDOM/Render-Hydrate/Render';
 import Hydrate from '../Components/ReactDOM/Render-Hydrate/Hydrate';
 import FindDOMNode from '../Components/ReactDOM/FindDOMNode/FindDOMNode';
-import Signup from '../Components/Form/Signup';
+import Signup from '../Components/ReactForm/Signup';
 import List from '../Components/List/List';
 import JsonFormatList from '../Components/List/JsonFormatList';
 import RouterMain from '../Components/Route/Router/RouterMain';
