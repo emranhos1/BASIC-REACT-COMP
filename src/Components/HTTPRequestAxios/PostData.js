@@ -9,12 +9,9 @@ class PostData extends Component {
             nativeName   : '',
             globalName   : '',
             shortName    : '',
-            requestData  : [],
             
-            // myData     : [],
-            // total      : 0,
-            // isSuccess  : false,
-            // message    :''
+            isSuccess  : false,
+            message    :''
         }
     }
 
@@ -23,8 +20,7 @@ class PostData extends Component {
         var inputValue  = event.target.value;
 
         this.setState({
-            [inputName] : inputValue,
-            data   : [{[inputName] : [inputValue]}]
+            [inputName] : inputValue
         })
 
         //Field Validation
@@ -51,25 +47,32 @@ class PostData extends Component {
     }
 
     onClickHandlerEvent = () =>{
-        // Axios.post('http://localhost:9191/v.1.0/rest/gender/add', this.state.nativeName)
-        //     .then(response=>{
-        //         console.log(response);
-        //         this.setState({
-        //             myData    : response.data.data,
-        //             total     : response.data.total,
-        //             isSuccess : response.data.success,
-        //             message   : response.data.message
-        //         })
-        //     })
-        //     .catch(error=>{
-        //         console.log(error);
-        //     })
+
+        const formData = {
+            nameNative   : this.state.nativeName,
+            nameGlobal   : this.state.globalName,
+            shortName    : this.state.shortName,
+        };
+        Axios.post('http://localhost:9191/v.1.0/rest/gender/add', formData)
+            .then(response=>{
+                console.log(response);
+                this.setState({
+                    myData    : response.data.data,
+                    isSuccess : response.data.success,
+                    message   : response.data.message
+                })
+            })
+            .catch(error=>{
+                console.log(error);
+            })
     }
 
     render() {
         return (
             <div>
-                <h4>Post By API</h4>
+                <h3>Post By API</h3>
+                <h5>Success : {this.state.isSuccess.toString()}</h5>
+                <h5>Message : {this.state.message}</h5>
                 {/* <form onSubmit={this.onSubmitHandlerEvent}> */}
                     <input className='form-control' onChange={this.onChangeHandlerEvent} name='nativeName' type='text' placeholder='Native Name'></input>
                     <h6>{this.state.nativeName}</h6>
