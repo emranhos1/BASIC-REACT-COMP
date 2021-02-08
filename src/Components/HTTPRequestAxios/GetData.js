@@ -40,11 +40,15 @@ class GetData extends Component {
         return (
             <div>
                 <br></br>
-                <h4>Getting data from API</h4>
-                <select style={{backgroundColor: 'blue'}}>
+                <h2>Getting Gender from API</h2>
+                <select>
                     <option key='0' value='0'>Select One</option>
                     {data}
                 </select>
+                <br></br>
+                <br></br>
+ 
+                {/* This is not react table it use for test purpose */}
                 <table style={{"borderWidth":"5px", 'borderColor':"#aaaaaa", 'borderStyle':'solid'}}>
                     <thead>
                         <tr>

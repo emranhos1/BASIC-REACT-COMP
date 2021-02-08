@@ -26,6 +26,7 @@ import JsonFormatList from '../Components/List/JsonFormatList';
 import RouterMain from '../Components/Route/Router/RouterMain';
 import GetData from '../Components/HTTPRequestAxios/GetData';
 import PostData from '../Components/HTTPRequestAxios/PostData';
+import MyTable from '../Components/ReactTable/MyTable';
 
 function App() {
     return (
@@ -79,9 +80,16 @@ function App() {
                 <div className="col-md-4" style={{backgroundColor: '#999c59'}}>
                     <RouterMain></RouterMain>
                 </div>
-                <div className="col-md-4" style={{backgroundColor: 'blueviolet'}}>
-                    <GetData></GetData>
-                    <PostData></PostData>
+                <div className="col-md-8">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <GetData/>
+                        </div>
+                        <div className="col-md-6">
+                            <PostData/>
+                        </div>
+                    </div>
+                    <MyTable></MyTable>
                 </div>
             </div>
         </div>

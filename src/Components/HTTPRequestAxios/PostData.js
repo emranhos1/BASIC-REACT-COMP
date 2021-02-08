@@ -46,7 +46,13 @@ class PostData extends Component {
         }
     }
 
-    onClickHandlerEvent = () =>{
+    onSubmitHandlerEvent = () =>{
+
+        // if(inputValue == null || inputValue == ''){
+
+        // } else {
+        //     this.setState({nativeName : 'Native name not be empty'})
+        // }
 
         const formData = {
             nameNative   : this.state.nativeName,
@@ -70,21 +76,19 @@ class PostData extends Component {
     render() {
         return (
             <div>
-                <h3>Post By API</h3>
-                <h5>Success : {this.state.isSuccess.toString()}</h5>
-                <h5>Message : {this.state.message}</h5>
-                {/* <form onSubmit={this.onSubmitHandlerEvent}> */}
-                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='nativeName' type='text' placeholder='Native Name'></input>
+                <h2>Posting Gender by API</h2>
+                <form onSubmit={this.onSubmitHandlerEvent}>
+                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='nativeName' type='text' placeholder='Native Name' required></input>
                     <h6>{this.state.nativeName}</h6>
                     <br></br>
-                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='globalName' type='text' placeholder='Global Name'></input>
+                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='globalName' type='text' placeholder='Global Name' required></input>
                     <h6>{this.state.globalName}</h6>
                     <br></br>
-                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='shortName'  type='text' placeholder='Short Name'></input>
+                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='shortName'  type='text' placeholder='Short Name' required></input>
                     <h6>{this.state.shortName}</h6>
                     <br></br>
-                    <input onClick={this.onClickHandlerEvent} className='btn btn-success' name='submit' type='submit' value='Submit'></input>
-                {/* </form> */}
+                    <input className='btn btn-success' name='submit' type='submit' value='Submit'></input>
+                </form>
             </div>
         );
     }
