@@ -25,12 +25,12 @@ class MyTable extends Component {
     }   
     
     render() {
-        
-        const localData  = [
-            {code: '1', nameGlobal: 'Male',   nameNative: 'Male',   shortName: 'M'},
-            {code: '2', nameGlobal: 'Female', nameNative: 'Female', shortName: 'F'},
-            {code: '3', nameGlobal: 'Other',  nameNative: 'Male',   shortName: 'O'},
-        ];
+        // For Local data test
+        // const localData  = [
+        //     {code: '1', nameGlobal: 'Male',   nameNative: 'Male',   shortName: 'M'},
+        //     {code: '2', nameGlobal: 'Female', nameNative: 'Female', shortName: 'F'},
+        //     {code: '3', nameGlobal: 'Other',  nameNative: 'Male',   shortName: 'O'},
+        // ];
         
         const columnName = [
             {Header : 'SL',           accessor : 'code'},
