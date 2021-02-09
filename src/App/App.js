@@ -26,9 +26,9 @@ import JsonFormatList from '../Components/List/JsonFormatList';
 import GetData from '../Components/HTTPRequestAxios/GetData';
 import PostData from '../Components/HTTPRequestAxios/PostData';
 import MyTable from '../Components/ReactTable/MyTable';
-import Navigation from '../Components/ReactNavbar/Navigation';
 import ExamRouter from "../Components/Route/Router/ExamRouter";
 import ExamRouterWithURLParam from "../Components/Route/RouteWithURLParam/ExamRouterWithURLParam";
+import LoginRouter from "../Components/Login/Router/LoginRouter";
 
 function App() {
     return (
@@ -83,7 +83,6 @@ function App() {
                     <ExamRouter/>
                     <br/>
                     <br/>
-                    <br/>
                     <h5>Passing data by url By button click from <b><i>Contact to Portfolio</i></b></h5>
                     <ExamRouterWithURLParam/>
                 </div>
@@ -99,9 +98,15 @@ function App() {
                     <MyTable/>
                 </div>
             </div>
-            
-            <div>
-                <Navigation/>
+
+            {/*<div>*/}
+            {/*    <Navigation/>*/}
+            {/*</div>*/}
+
+            <div className="row">
+                <div className="col-md-4">
+                    <LoginRouter/>
+                </div>
             </div>
         </div>
   );
