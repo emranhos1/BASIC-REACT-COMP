@@ -73,23 +73,18 @@ class Signup extends Component {
         return (
             <div>
                 <h1>Registration Form</h1>
-                <p>First Name : {this.state.firstName}</p>
-                <p>Last Name  : {this.state.lastName}</p>
-                <p>Email      : {this.state.email}</p>
-                <p>Cell No    : {this.state.cellNo}</p>
-                <p>Address    : {this.state.address}</p>
-                <p>Country    : {this.state.country}</p>
+                {/*<p>First Name : {this.state.firstName}</p>*/}
+                {/*<p>Last Name  : {this.state.lastName}</p>*/}
+                {/*<p>Email      : {this.state.email}</p>*/}
+                {/*<p>Cell No    : {this.state.cellNo}</p>*/}
+                {/*<p>Address    : {this.state.address}</p>*/}
+                {/*<p>Country    : {this.state.country}</p>*/}
                 <form onSubmit={this.onSubmitHandlerEvent}>
-                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='firstName' type='text'   placeholder='First Name'></input>
-                    <br></br>
-                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='lastName'  type='text'   placeholder='Last Name'></input>
-                    <br></br>
-                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='email'     type='text'   placeholder='Email'></input>
-                    <br></br>
-                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='cellNo'    type='text'   placeholder='Cell No'></input>
-                    <br></br>
-                    <textarea className='form-control' onChange={this.onChangeHandlerEvent} name='address' placeholder='Address'></textarea>
-                    <br></br>
+                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='firstName' type='text'   placeholder='First Name'/>
+                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='lastName'  type='text'   placeholder='Last Name'/>
+                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='email'     type='text'   placeholder='Email'/>
+                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='cellNo'    type='text'   placeholder='Cell No'/>
+                    <textarea className='form-control' onChange={this.onChangeHandlerEvent} name='address' placeholder='Address'/>
                     <select className='form-control' name='country' onChange={this.onChangeHandlerEvent}>
                         <option>Select Country</option>
                         <option>Bangladesh</option>
@@ -97,8 +92,7 @@ class Signup extends Component {
                         <option>Iran</option>
                         <option>Irak</option>
                     </select>
-                    <br></br>
-                    <input className='btn btn-success' name='submit' type='submit' value='Submit'></input>
+                    <input className='btn btn-success' name='submit' type='submit' value='Submit'/>
                 </form>
             </div>
         );

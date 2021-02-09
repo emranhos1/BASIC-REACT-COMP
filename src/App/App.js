@@ -29,12 +29,14 @@ import MyTable from '../Components/ReactTable/MyTable';
 import ExamRouter from "../Components/Route/Router/ExamRouter";
 import ExamRouterWithURLParam from "../Components/Route/RouteWithURLParam/ExamRouterWithURLParam";
 import LoginRouter from "../Components/Login/Router/LoginRouter";
+import Navigation from "../Components/ReactNavbar/Navigation";
+import ReactUseState from "../Components/Hooks/State/ReactUseState";
 
 function App() {
     return (
         <div className="App">
             <div className="row">
-                <div className="col-md-4" style={{backgroundColor: '#e9dbbb'}}>
+                <div className="col-md-3" style={{backgroundColor: '#e9dbbb'}}>
                     <NormalJSCode/>
                     <FunctionalComponent/>
                     <ClassComponent/>
@@ -44,68 +46,82 @@ function App() {
                     <ClassProps name="Istiak"/>
                     <FunctionalButtonClick/>
                     <ClassButtonClick/>
+                </div>
+
+                <div className="col-md-3" style={{backgroundColor: '#23e4ff'}}>
                     <FunctionalPassingArgument value="Argument pass from Function Button"/>
                     <ClassPassingArgument value="Argument pass from Class Button"/>
-                </div>
- 
-                <div className="col-md-4" style={{backgroundColor: '#23e4ff'}}>
                     <BootstrapButton value="Bootstrap button Clicked"/>
                     <ArrowFunction msg="Arrived from Arrow Function"/>
                     <ClassState/>
                     <ClassStateWithVar/>
-                    <SetState/>
                 </div>
-                
-                <div className="col-md-4" style={{backgroundColor: '#6ca339'}}>
+
+                <div className="col-md-3" style={{backgroundColor: '#6ca339'}}>
+                    <SetState/>
                     <ConditionalReturn/>
                     <ConditionalVariableElement/>
                     <ForceUpdate/>
                     <Render/>
+                </div>
+
+                <div className="col-md-3" style={{backgroundColor: '#dbe58f'}}>
                     <Hydrate/>
+                    <FindDOMNode/>
                 </div>
             </div>
 
             <div className="row">
-                <div className="col-md-4" style={{backgroundColor: '#dbe58f'}}>
-                    <FindDOMNode/>
-                </div>
-                <div className="col-md-4" style={{backgroundColor: '#acd999'}}>
+                <div className="col-md-3" style={{backgroundColor: '#acd999'}}>
                     <Signup/>
                 </div>
-                <div className="col-md-4" style={{backgroundColor: '#995c56'}}>
+
+                <div className="col-md-3" style={{backgroundColor: '#995c56'}}>
                     <List/>
                     <JsonFormatList/>
                 </div>
-            </div>
-            
-            <div className="row">
-                <div className="col-md-4" style={{backgroundColor: '#999c59'}}>
+
+                <div className="col-md-3" style={{backgroundColor: '#999c59'}}>
                     <ExamRouter/>
-                    <br/>
                     <br/>
                     <h5>Passing data by url By button click from <b><i>Contact to Portfolio</i></b></h5>
                     <ExamRouterWithURLParam/>
                 </div>
-                <div className="col-md-8">
-                    <div className="row">
-                        <div className="col-md-6">
-                            <GetData/>
-                        </div>
-                        <div className="col-md-6">
-                            <PostData/>
-                        </div>
+
+                <div className="col-md-3" style={{backgroundColor: '#099b59'}}>
+                    <div className="col-md-10">
+                        <LoginRouter/>
                     </div>
+                </div>
+            </div>
+            
+            <div className="row">
+                <div className="col-md-5 row" style={{backgroundColor: 'gray'}}>
+                    <div className="col-md-6">
+                        <GetData/>
+                    </div>
+                    <div className="col-md-6">
+                        <PostData/>
+                    </div>
+                </div>
+
+                <div className="col-md-7" style={{backgroundColor: 'lightgray'}}>
                     <MyTable/>
                 </div>
             </div>
 
-            {/*<div>*/}
-            {/*    <Navigation/>*/}
-            {/*</div>*/}
+            <div>
+                <h6>simple navigation bar</h6>
+                <Navigation/>
+            </div>
 
+            <br/>
+            <div style={{backgroundColor: 'lightcoral'}}>
+                <h1>React Hook in Functional Component</h1>
+            </div>
             <div className="row">
-                <div className="col-md-4">
-                    <LoginRouter/>
+                <div className="col-md-3" style={{backgroundColor: 'lightblue'}}>
+                    <ReactUseState/>
                 </div>
             </div>
         </div>

@@ -78,16 +78,16 @@ class PostData extends Component {
             <div>
                 <h2>Posting Gender by API</h2>
                 <form onSubmit={this.onSubmitHandlerEvent}>
-                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='nativeName' type='text' placeholder='Native Name' required></input>
+                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='nativeName' type='text' placeholder='Native Name' required/>
                     <h6>{this.state.nativeName}</h6>
-                    <br></br>
-                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='globalName' type='text' placeholder='Global Name' required></input>
+
+                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='globalName' type='text' placeholder='Global Name' required/>
                     <h6>{this.state.globalName}</h6>
-                    <br></br>
-                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='shortName'  type='text' placeholder='Short Name' required></input>
+
+                    <input className='form-control' onChange={this.onChangeHandlerEvent} name='shortName'  type='text' placeholder='Short Name' required/>
                     <h6>{this.state.shortName}</h6>
-                    <br></br>
-                    <input className='btn btn-success' name='submit' type='submit' value='Submit'></input>
+
+                    <input className='btn btn-success' name='submit' type='submit' value='Submit'/>
                 </form>
             </div>
         );
