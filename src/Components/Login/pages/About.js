@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect, UseHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 class About extends Component {
 

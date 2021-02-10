@@ -31,6 +31,11 @@ import ExamRouterWithURLParam from "../Components/Route/RouteWithURLParam/ExamRo
 import LoginRouter from "../Components/Login/Router/LoginRouter";
 import Navigation from "../Components/ReactNavbar/Navigation";
 import ReactUseState from "../Components/Hooks/State/ReactUseState";
+import ComponentTree from "../Components/ComponentTree/ComponentTree";
+import ComponentTreeProps from "../Components/ComponentTree/ComponentTreeProps";
+import Context from "../Components/Context/Context";
+import { Provider } from "../Components/Context/MyContext"
+import MyFragments from "../Components/Fragments/MyFragments";
 
 function App() {
     return (
@@ -113,6 +118,23 @@ function App() {
             <div>
                 <h6>simple navigation bar</h6>
                 <Navigation/>
+            </div>
+
+            <div className="row">
+                <div className="col-md-3" style={{backgroundColor: 'lightgray'}}>
+                    <ComponentTree/>
+                </div>
+                <div className="col-md-3" style={{backgroundColor: 'lightcyan'}}>
+                    <ComponentTreeProps name='Md. Emran Hossain' place={'From Component Tree Props'}/>
+                </div>
+                <div className="col-md-3" style={{backgroundColor: 'lightsalmon'}}>
+                    <Provider value='Data From App to Page3 By Context provider'>
+                        <Context/>
+                    </Provider>
+                </div>
+                <div className="col-md-3" style={{backgroundColor: 'lightseagreen'}}>
+                    <MyFragments/>
+                </div>
             </div>
 
             <br/>
